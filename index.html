@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Law Firm Case Management By V&D lawfirms</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+input, textarea, button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.about{
+    position: relative;
+    text-align: center;
+    background-color:#ffff;
+    padding : 3%;
+    margin : top 4px;
+    
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Law Firm Case Management by V&D lawfirms</h1>
+    </header>
+    <div class="about">
+        <p>V&D LLP, a prestigious law firm headquartered in coimbatore city. Established in 1927, V&D has a long history of representing major corporations and financial institutions in complex legal matters..We have 97 years of law practices experience with a success rate of 95%....</p>
+        <img src="https://blog.ipleaders.in/wp-content/uploads/2020/04/professional-male-lawyer-judge-working-with-contract-papers-documents-gavel-scales-justice-table-courtroom-law-legal-services-concept_28283-1373.jpg" alt="images">
+        <h2>OUR DOMAINS</h2>
+        <p>We are expertise in the areas such as:</p>
+        <p>Practice Areas: Civil law firms cover a wide range of practice areas, including:</p>
+
+        <p><b>FAMILY LAW:</b> Handling issues like divorce, child custody, adoption, and domestic violence.</p>
+          <p><b>REAL ESTATE LAW:</b> Dealing with property transactions, landlord-tenant disputes, zoning issues, and property development.</p>
+           <p><b>CONTRACT LAW:</b> Drafting, reviewing, and litigating contracts between individuals or businesses.</p>
+          <p><b>PERSONAL INJURIES LAW:</b> Representing individuals who have been injured due to the negligence or intentional actions of others.</p>
+           <p><b>ESTATE PLANNING AND PROBATE:</b> Assisting clients with wills, trusts, estate administration, and probate proceedings.</p>
+           <p><b>EMPLOYMENT LAW:</b> Advising on matters such as discrimination, wrongful termination, and wage disputes.</p>
+          <p><b>CONSUMER LAW:</b> Protecting consumers from unfair business practices and handling disputes related to consumer transactions</p>
+        <img src="https://graphicsprings.com/wp-content/uploads/2023/08/image-157-3.jpg" alt="Imges">
+        <h2>OUR MOTTO</h2>
+        <p>A law firm's motto often reflects its commitment to clients, its approach to practicing law, or its guiding philosophy.Mottos of our law firms were:</p>
+
+           <p><b>"Justice with Integrity"</b></p> 
+            <p><b>"Client-Centered Advocacy"</b></p>
+            <p><b>"Excellence in Legal Service"</b></p>
+           <p><b>"Defending Your Rights, Protecting Your Interests"</b></p> 
+           <p><b>"Legal Solutions for Today's Challenges"</b></p> 
+            <p><b>"Experience, Expertise, Excellence"</b></p>
+            <p><b>"Guiding You Through Legal Complexity"</b></p>
+           <p><b>"Compassionate Counsel, Aggressive Representation"</b></p> 
+           <p><b>"Building Trust, Delivering Results"</b></p>
+        <img src="https://m.media-amazon.com/images/I/514XMOaRpFL._AC_UF894,1000_QL80_.jpg" alt="IMages">
+    </div>
+    <main>
+        <section id="document-management">
+            <h2>Document Management</h2>
+            <input type="file" id="document-upload" multiple>
+            <ul id="document-list"></ul>
+        </section>
+        <section id="deadline-tracking">
+            <h2>Deadline Tracking</h2>
+            <form id="deadline-form">
+                <input type="text" id="case-name" placeholder="Case Name" required>
+                <input type="date" id="deadline-date" required>
+                <button type="submit">Add Deadline</button>
+            </form>
+            <ul id="deadline-list"></ul>
+        </section>
+        <section id="client-communication">
+            <h2>Client Communication</h2>
+            <form id="message-form">
+                <input type="text" id="client-name" placeholder="Client Name" required>
+                <textarea id="message" placeholder="Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+            <ul id="message-list"></ul>
+        </section>
+    </main>
+    <script src="index.js"></script>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "13118be0-d479-442a-ac91-b99eace6a104", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "5233d563-700f-420a-b444-023ffcb743bd", // The ID of your service instance.
+          onLoad: async (instance) => { await instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+</body>
+</html>
